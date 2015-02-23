@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>RubyGettingStarted</title>
+  <title>Dani &amp; Brett</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+	<header>
+		Nav goes here
+	</header>
+
+	<div class="page-body">
+		<%= yield %>
+	</div>
 
 </body>
 </html>
