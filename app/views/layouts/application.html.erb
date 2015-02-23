@@ -8,13 +8,13 @@
 </head>
 <body>
 
-	<header>
-		Nav goes here
-	</header>
+	<%= render "components/nav" %>
 
 	<div class="page-body">
 		<%= yield %>
 	</div>
+
+	<%= render "components/footer" %>
 
 </body>
 </html>

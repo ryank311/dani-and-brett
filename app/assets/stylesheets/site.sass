@@ -1,21 +1,67 @@
 @charset 'utf-8'
 @import 'components/colors'
 
+html 
+	height: 100%
+
 body
-	width: 100%
 	min-height: 100%
 	background-color: $background-color
+
+.center
+	text-align: center
+
+.hero-container
+	position: relative
+	width: 100%
+	min-height: 100%
+	height: 100vh
+	color: $white
 	background: url(engagement2.jpg)
 	background-size: cover
 	background-repeat: no-repeat
 
-.page-body
-	max-width: 1600px
+	.hero
+		padding: 4em
+		margin-right: 8%
+		margin-top: 10em
 
-.hero
-	position: absolute
-	right: 4em
-	top: 5em
-	padding: 4em
-	border-radius: 0.2em
-	opacity: .8
+		h1
+			font-size: 5em
+
+		p
+			margin-top: 2em
+			font-size: 2em
+
+	.theres-more
+		position: absolute
+		bottom: 0.5em
+		left: 50%
+		margin-left: -0.5em
+		font-size: 3em
+		text-align: center
+		vertical-align: bottom
+
+.wedding-information
+	margin: 12em 0 2em 0
+
+	h2
+		font-size: 4em
+
+	p
+		font-size: 1.5em
+		line-height: 2em
+
+	.image-carousel
+		height: 40em
+
+		.owl-item 
+			img
+				display: block
+				width: auto
+				height: 30em
+				margin-left: auto
+				margin-right: auto
+
+.divider-left
+	border-left: 1px solid $grey
