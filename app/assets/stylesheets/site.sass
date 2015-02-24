@@ -1,17 +1,27 @@
 @charset 'utf-8'
 @import 'components/colors'
 
+
+@font-face
+	font-family: Whatka
+	src: asset-url("Whatka.ttf")
+
+@font-face
+	font-family: CoelacSubhead
+	src: asset-url("CoelacSubh.otf")
+
+@font-face
+	font-family: CoelacLight
+	src: asset-url("CoelacLight.otf")
+
+
 html 
 	height: 100%
+	font-family: 'CoelacLight'
 
 body
 	min-height: 100%
 	background-color: $background-color
-
-@font-face
-	font-family: DynalightRegular
-	src: asset-url("Dynalight-Regular.otf")
-
 
 .center
 	text-align: center
@@ -24,20 +34,27 @@ body
 	color: $white
 	background: image-url("dani_brett0.jpg")
 	background-size: cover
+	background-position: center
 	background-repeat: no-repeat
 
 	.hero
-		padding: 4em
-		margin-right: 4%
-		margin-top: 6em
+		padding: 16% 0 2em 0
+		margin-left: auto
+		margin-right: auto
+		min-width: 40em
+		margin-top: 0
+		color: $accent
 
 		h1
 			font-size: 8em
-			font-family: 'DynalightRegular'
+			font-family: 'Whatka'
+			text-shadow: 4px 4px $black, -2px -2px 0 black, 2px -2px 0 $black, -2px 2px 0 $black, 2px 2px 0 $black
 
 		p
 			margin-top: 2em
 			font-size: 2em
+			font-family: 'Whatka'
+			text-shadow: 2px 2px $black, -1px -1px 0 black, 1px -1px 0 $black, -1px 1px 0 $black, 1px 1px 0 $black
 
 	.theres-more
 		position: absolute
@@ -53,9 +70,10 @@ body
 
 	h2
 		font-size: 4em
+		font-family: 'CoelacSubhead'
 
 	p
-		font-size: 1.5em
+		font-size: 1.2em
 		line-height: 2em
 
 	.image-carousel
@@ -81,9 +99,10 @@ body
 
 	h2
 		font-size: 4em
+		font-family: 'CoelacSubhead'
 
 	p
-		font-size: 1.5em
+		font-size: 1.2em
 		line-height: 2em
 
 	.text-panel
@@ -91,7 +110,11 @@ body
 		font-size: 0.8em
 		border-radius: 1em
 		padding: 4em
-		margin-top: 50%
+		margin-top: 20%
+		min-width: 20em
+		max-width: 40em
+		margin-left: auto
+		margin-right: auto
 
 .divider-left
 	border-left: 1px solid $grey
