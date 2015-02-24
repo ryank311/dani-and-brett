@@ -1,6 +1,6 @@
 @charset 'utf-8'
 @import 'components/colors'
-
+@import 'components/breakpoints'
 
 @font-face
 	font-family: Whatka
@@ -63,6 +63,7 @@ a, a:visited
 		p
 			margin-top: 1em
 			font-size: 4em
+			line-height: 1em
 			font-family: 'Whatka'
 			text-shadow: 2px 2px $black, -1px -1px 0 black, 1px -1px 0 $black, -1px 1px 0 $black, 1px 1px 0 $black
 
@@ -80,7 +81,10 @@ a, a:visited
 
 
 .wedding-information
-	margin: 16em 0 8em 0
+	margin: 14% 0 14% 0
+
+	@include respond-to(handhelds)
+		margin: 8em 0 8em 0
 
 	h2
 		font-size: 4em
@@ -90,14 +94,19 @@ a, a:visited
 		font-size: 1.5em
 		line-height: 2em
 
+		@include respond-to(handhelds)
+			font-size: 1.2em
+			text-align: left
+
 	.image-carousel
-		height: 40em
+		max-height: 40em
 
 		.owl-item 
 			img
 				display: block
 				width: auto
-				height: 30em
+				max-width: 100%
+				max-height: 86vh
 				margin-left: auto
 				margin-right: auto
 				border-radius: 0.25em
@@ -117,19 +126,25 @@ a, a:visited
 		font-family: 'CoelacSubhead'
 
 	p
-		font-size: 1.5em
+		font-size: 1.8em
 		line-height: 2em
+
+		@include respond-to(handhelds)
+			font-size: 1.5em
 
 	.text-panel
 		background-color: $white
 		font-size: 0.8em
-		border-radius: 1em
+		border-radius: 0.25em
 		padding: 4em
 		margin-top: 16%
 		min-width: 20em
 		max-width: 40em
 		margin-left: auto
 		margin-right: auto
+
+		@include respond-to(handhelds)
+			margin-top: 0
 
 .divider-left
 	border-left: 1px solid $grey
