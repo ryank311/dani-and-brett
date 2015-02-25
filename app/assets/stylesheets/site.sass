@@ -167,6 +167,38 @@ a, a:visited
 
 .information-container
 	padding: 6em 0 2em 0
+	min-height: 100vh
+
+	&:nth-child(even)
+		background-color: $white
+
+	.information-image
+		text-align: center
+		
+		img
+			max-width: 100%
+			max-height: 86vh
+			border-radius: 0.25em
+
+	.map-frame
+		max-width: 100%
+		min-height: 86vh
+		border-radius: 0.25em
+
+	.hero
+		margin-top: 30vh
+
+		@include respond-to-smaller(medium-screens)
+			padding-left: 0
+
+		h1
+			font-size: 4em
+			font-family: 'CoelacSubhead'
+
+		p
+			font-size: 2em
+			line-height: 2em
+
 
 .registry-container
 	padding: 6em 0 6em 0
@@ -202,3 +234,4 @@ a, a:visited
 		p
 			font-size: 1.5em
 			line-height: 2em
+
