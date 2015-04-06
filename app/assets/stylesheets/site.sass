@@ -1,6 +1,6 @@
 @charset 'utf-8'
 @import 'components/colors'
-
+@import 'components/breakpoints'
 
 @font-face
 	font-family: Whatka
@@ -23,6 +23,16 @@ body
 	min-height: 100%
 	background-color: $background-color
 
+p
+	font-family: 'CoelacLight'
+
+a, a:visited
+	color: $accent
+	&:hover, &:active, &:focus
+		color: darken($accent, 20%)
+		background-color: transparent
+		text-decoration: none
+
 .center
 	text-align: center
 
@@ -41,7 +51,7 @@ body
 		padding: 16% 0 2em 0
 		margin-left: auto
 		margin-right: auto
-		min-width: 40em
+		max-width: 48em
 		margin-top: 0
 		color: $accent
 
@@ -52,7 +62,8 @@ body
 
 		p
 			margin-top: 1em
-			font-size: 3em
+			font-size: 4em
+			line-height: 1em
 			font-family: 'Whatka'
 			text-shadow: 2px 2px $black, -1px -1px 0 black, 1px -1px 0 $black, -1px 1px 0 $black, 1px 1px 0 $black
 
@@ -65,8 +76,15 @@ body
 		text-align: center
 		vertical-align: bottom
 
+		span
+			text-shadow: 2px 2px $black, -1px -1px 0 black, 1px -1px 0 $black, -1px 1px 0 $black, 1px 1px 0 $black
+
+
 .wedding-information
-	margin: 16em 0 8em 0
+	margin: 14% 0 14% 0
+
+	@include respond-to(handhelds)
+		margin: 8em 0 8em 0
 
 	#wedding-info-carousel
 		margin-top: 1em
@@ -76,25 +94,31 @@ body
 		font-family: 'CoelacSubhead'
 
 	p
-		font-size: 1.2em
+		font-size: 1.5em
 		line-height: 2em
 
+		@include respond-to(handhelds)
+			font-size: 1.2em
+			text-align: left
+
 	.image-carousel
-		height: 40em
+		max-height: 40em
 
 		.owl-item 
 			img
 				display: block
 				width: auto
-				height: 30em
+				max-width: 100%
+				max-height: 86vh
 				margin-left: auto
 				margin-right: auto
+				border-radius: 0.25em
 
 .engagement-information
 	height: 100vh
 	width: 100%
 	margin-bottom: 0
-	background: image-url("dani_brett1.jpg")
+	background: image-url("dani_brett_ny.jpg")
 	background-size: cover
 	background-attachment: fixed
 	background-repeat: no-repeat
@@ -105,19 +129,112 @@ body
 		font-family: 'CoelacSubhead'
 
 	p
-		font-size: 1.2em
+		font-size: 1.8em
 		line-height: 2em
+
+		@include respond-to(handhelds)
+			font-size: 1.5em
 
 	.text-panel
 		background-color: $white
 		font-size: 0.8em
-		border-radius: 1em
+		border-radius: 0.25em
 		padding: 4em
-		margin-top: 20%
+		margin-top: 25vh
 		min-width: 20em
-		max-width: 40em
+		max-width: 50em
 		margin-left: auto
 		margin-right: auto
 
+		@include respond-to(handhelds)
+			margin-top: 80vh
+
 .divider-left
 	border-left: 1px solid $grey
+
+.photos-container
+	padding: 6em 0 2em 0
+	height: 100vh
+	background-color: $background-color
+
+	.image-carousel
+		.owl-item 
+			img
+				display: block
+				width: auto
+				max-width: 100%
+				max-height: 84vh
+				margin-left: auto
+				margin-right: auto
+				border-radius: 0.25em
+
+.information-container
+	padding: 6em 0 2em 0
+	min-height: 100vh
+
+	&:nth-child(even)
+		background-color: $white
+
+	.information-image
+		text-align: center
+		
+		img
+			max-width: 100%
+			max-height: 86vh
+			border-radius: 0.25em
+
+	.map-frame
+		max-width: 100%
+		min-height: 86vh
+		border-radius: 0.25em
+
+	.hero
+		margin-top: 30vh
+
+		@include respond-to-smaller(medium-screens)
+			padding-left: 0
+
+		h1
+			font-size: 4em
+			font-family: 'CoelacSubhead'
+
+		p
+			font-size: 2em
+			line-height: 2em
+
+
+.registry-container
+	padding: 6em 0 6em 0
+	min-height: 100vh
+
+	.registry-image
+		text-align: center
+		
+		img
+			max-width: 100%
+			max-height: 86vh
+			border-radius: 0.25em
+
+	.hero
+		padding-left: 4em
+		margin-top: 20%
+
+		@include respond-to-smaller(medium-screens)
+			padding-left: 0
+
+		ul
+			list-style: none
+			padding-left: 0
+
+			li
+				font-size: 1.5em
+				line-height: 2em
+
+		h1
+			font-size: 4em
+			font-family: 'CoelacSubhead'
+
+		p
+			font-size: 1.5em
+			line-height: 2em
+

@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'registry/index'
+
+  get 'information/index'
+
   get 'photos/index'
 
   resources :widgets
@@ -11,6 +15,8 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   get 'photos' => 'photos#index'
+  get 'info' => 'information#index'
+  get 'registry' => 'registry#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
