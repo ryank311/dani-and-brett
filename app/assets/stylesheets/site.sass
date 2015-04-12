@@ -14,6 +14,9 @@
 	font-family: CoelacLight
 	src: asset-url("CoelacLight.otf")
 
+@font-face
+	font-family: Amsterdam
+	src: asset-url("amsterdam.ttf")
 
 html 
 	height: 100%
@@ -51,20 +54,21 @@ a, a:visited
 		padding: 16% 0 2em 0
 		margin-left: auto
 		margin-right: auto
-		max-width: 48em
+		max-width: 64em
 		margin-top: 0
-		color: $accent
+		color: $pink
 
 		h1
-			font-size: 8em
-			font-family: 'Whatka'
+			font-size: 14em
+			font-family: 'Amsterdam'
 			text-shadow: 4px 4px $black, -2px -2px 0 black, 2px -2px 0 $black, -2px 2px 0 $black, 2px 2px 0 $black
 
 		p
-			margin-top: 1em
-			font-size: 4em
+			margin-top: 0em
+			font-size: 6em
 			line-height: 1em
-			font-family: 'Whatka'
+			font-family: 'Amsterdam'
+			color: $accent
 			text-shadow: 2px 2px $black, -1px -1px 0 black, 1px -1px 0 $black, -1px 1px 0 $black, 1px 1px 0 $black
 
 	.theres-more
@@ -181,13 +185,18 @@ a, a:visited
 		
 		img
 			max-width: 100%
-			max-height: 86vh
+			height: 86vh
 			border-radius: 0.25em
 
 	.map-frame
 		max-width: 100%
 		min-height: 86vh
 		border-radius: 0.25em
+		width: 80%
+		height: auto
+
+		@include respond-to(handhelds)
+			width: 96%
 
 	.hero
 		margin-top: 20%
@@ -203,6 +212,9 @@ a, a:visited
 		p
 			font-size: 2em
 			line-height: 2em
+
+			+ p
+				margin-top: 2em
 
 		.smaller-print
 			margin-bottom: 2em
