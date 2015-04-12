@@ -58,10 +58,25 @@ a, a:visited
 		margin-top: 0
 		color: $pink
 
+		@include respond-to(medium-screens)
+			padding-top: 30%
+
+		@include respond-to(handhelds)
+			padding-top: 50%
+
 		h1
 			font-size: 14em
 			font-family: 'Amsterdam'
 			text-shadow: 4px 4px $black, -2px -2px 0 black, 2px -2px 0 $black, -2px 2px 0 $black, 2px 2px 0 $black
+
+			@include respond-to(handhelds)
+				font-size: 6em
+
+			@include respond-to(medium-screens)
+				font-size: 8em
+
+			@include respond-to(large-screens)
+				font-size: 10em
 
 		p
 			margin-top: 0em
@@ -70,6 +85,9 @@ a, a:visited
 			font-family: 'Amsterdam'
 			color: $accent
 			text-shadow: 2px 2px $black, -1px -1px 0 black, 1px -1px 0 $black, -1px 1px 0 $black, 1px 1px 0 $black
+
+			@include respond-to(handhelds)
+				font-size: 3em
 
 	.theres-more
 		position: absolute
