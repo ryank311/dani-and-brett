@@ -3,7 +3,12 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $ ->
-	$("#photos-carousel").owlCarousel({
-		singleItem: true,
-		autoPlay: true
-	})
+	grid = $('.gallery').masonry({
+		itemSelector: '.photo-thumbnail',
+		columnWidth: '.photo-thumbnail',
+		percentPosition: true,
+		isInitLayout: false
+		})
+	setTimeout ( ->
+		grid.masonry();
+	), 500

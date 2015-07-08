@@ -1,7 +1,7 @@
 <div class="container-fluid">
-	<div class="photos-container row">
+	<div class="photos-container">
 		<div id="photos-gallery" class="gallery">
-			<div class="col-sm-6 col-md-4 col-lg-3 col-xs-12">
+			<div class="photo-thumbnail">
         <figure>
             <a class="thumbnail-link" href="<%= image_path('dani_brett_hr1.jpg') %>" data-size="2048x1367">
 								<%= image_tag("thumb.dani_brett_hr1.jpg") %>
@@ -9,7 +9,7 @@
 						<figcaption itemprop="caption description">Dani &amp; Brett Engagement</figcaption>
         </figure>
 			</div>
-			<div class="col-sm-6 col-md-4 col-lg-3 col-xs-12">
+			<div class="photo-thumbnail">
         <figure>
             <a class="thumbnail-link" href="<%= image_path('dani_brett_hr2.jpg') %>" data-size="2048x1367">
 							<%= image_tag("thumb.dani_brett_hr2.jpg") %>
@@ -17,7 +17,15 @@
 						<figcaption itemprop="caption description">Dani &amp; Brett Engagement</figcaption>
         </figure>
 			</div>
-			<div class="col-sm-6 col-md-4 col-lg-3 col-xs-12">
+			<div class="photo-thumbnail">
+        <figure class="tall">
+            <a class="thumbnail-link" href="<%= image_path('shower/Dani_Brett_79.JPG') %>" data-size="1459x2189">
+							<%= image_tag("shower/thumb.Dani_Brett_79.JPG") %>
+            </a>
+						<figcaption itemprop="caption description">Dani &amp; Brett Shower</figcaption>
+        </figure>
+			</div>
+			<div class="photo-thumbnail">
         <figure>
             <a class="thumbnail-link" href="<%= image_path('dani_brett_hr3.jpg') %>" data-size="2048x1367">
 							<%= image_tag("thumb.dani_brett_hr3.jpg") %>
@@ -25,88 +33,7 @@
 						<figcaption itemprop="caption description">Dani &amp; Brett Engagement</figcaption>
         </figure>
 			</div>
-			<div class="col-sm-6 col-md-4 col-lg-3 col-xs-12">
-        <figure>
-            <a class="thumbnail-link" href="<%= image_path('scuba.jpg') %>" data-size="3872x2592">
-							<%= image_tag("thumb.scuba.jpg") %>
-            </a>
-						</a><figcaption itemprop="caption description">Dani &amp; Brett Scuba</figcaption>
-        </figure>
-			</div>
-			<div class="col-sm-6 col-md-4 col-lg-3 col-xs-12">
-        <figure>
-            <a class="thumbnail-link" href="<%= image_path('scuba2.jpg') %>" data-size="3872x2592">
-							<%= image_tag("thumb.scuba2.jpg") %>
-            </a>
-						</a><figcaption itemprop="caption description">Dani &amp; Brett Scuba</figcaption>
-        </figure>
-			</div>
-			<div class="col-sm-6 col-md-4 col-lg-3 col-xs-12">
-        <figure>
-            <a class="thumbnail-link" href="<%= image_path('scuba6.jpg') %>" data-size="3872x2592">
-							<%= image_tag("thumb.scuba6.jpg") %>
-            </a>
-						</a><figcaption itemprop="caption description">Dani &amp; Brett Scuba</figcaption>
-        </figure>
-			</div>
-			<div class="col-sm-6 col-md-4 col-lg-3 col-xs-12">
-        <figure>
-            <a class="thumbnail-link" href="<%= image_path('scuba4.jpg') %>" data-size="3872x2592">
-							<%= image_tag("thumb.scuba4.jpg") %>
-            </a><figcaption itemprop="caption description">Dani &amp; Brett Scuba</figcaption>
-        </figure>
-			</div>
-			<div class="col-sm-6 col-md-4 col-lg-3 col-xs-12">
-        <figure>
-            <a class="thumbnail-link" href="<%= image_path('dani_brett_hr0.jpg') %>" data-size="2048x1367">
-							<%= image_tag("thumb.dani_brett_hr0.jpg") %>
-            </a>
-						<figcaption itemprop="caption description">Dani &amp; Brett Engagement</figcaption>
-        </figure>
-			</div>
-			<div class="col-sm-6 col-md-4 col-lg-3 col-xs-12">
-        <figure>
-            <a class="thumbnail-link" href="<%= image_path('dani_brett_hr5.jpg') %>" data-size="2048x1367">
-							<%= image_tag("thumb.dani_brett_hr5.jpg") %>
-            </a>
-						<figcaption itemprop="caption description">Dani &amp; Brett Engagement</figcaption>
-        </figure>
-			</div>
-
-
-			<div class="col-sm-6 col-md-4 col-lg-3 col-xs-12">
-        <figure>
-            <a class="thumbnail-link" href="<%= image_path('shower/Dani_Brett_25.JPG') %>" data-size="2189x1459">
-							<%= image_tag("shower/thumb.Dani_Brett_25.JPG") %>
-            </a>
-						<figcaption itemprop="caption description">Dani &amp; Brett Shower</figcaption>
-        </figure>
-			</div>
-			<div class="col-sm-6 col-md-4 col-lg-3 col-xs-12">
-        <figure>
-            <a class="thumbnail-link" href="<%= image_path('shower/Dani_Brett_48.JPG') %>" data-size="2189x1459">
-							<%= image_tag("shower/thumb.Dani_Brett_48.JPG") %>
-            </a>
-						<figcaption itemprop="caption description">Dani &amp; Brett Shower</figcaption>
-        </figure>
-			</div>
-			<div class="col-sm-6 col-md-4 col-lg-3 col-xs-12">
-        <figure>
-            <a class="thumbnail-link" href="<%= image_path('shower/Dani_Brett_76.JPG') %>" data-size="2189x1459">
-							<%= image_tag("shower/thumb.Dani_Brett_76.JPG") %>
-            </a>
-						<figcaption itemprop="caption description">Dani &amp; Brett Shower</figcaption>
-        </figure>
-			</div>
-			<div class="col-sm-6 col-md-4 col-lg-3 col-xs-12">
-        <figure class="tall">
-            <a class="thumbnail-link" href="<%= image_path('shower/Dani_Brett_34.JPG') %>" data-size="1459x2189">
-							<%= image_tag("shower/thumb.Dani_Brett_34.JPG") %>
-            </a>
-						<figcaption itemprop="caption description">Dani &amp; Brett Shower</figcaption>
-        </figure>
-			</div>
-			<div class="col-sm-6 col-md-4 col-lg-3 col-xs-12">
+			<div class="photo-thumbnail">
         <figure class="tall">
             <a class="thumbnail-link" href="<%= image_path('shower/Dani_Brett_35.JPG') %>" data-size="1459x2189">
 							<%= image_tag("shower/thumb.Dani_Brett_35.JPG") %>
@@ -114,31 +41,15 @@
 						<figcaption itemprop="caption description">Dani &amp; Brett Shower</figcaption>
         </figure>
 			</div>
-			<div class="col-sm-6 col-md-4 col-lg-3 col-xs-12">
-        <figure class="tall">
-            <a class="thumbnail-link" href="<%= image_path('shower/Dani_Brett_44.JPG') %>" data-size="1459x2189">
-							<%= image_tag("shower/thumb.Dani_Brett_44.JPG") %>
+			<div class="photo-thumbnail">
+        <figure>
+            <a class="thumbnail-link" href="<%= image_path('scuba.jpg') %>" data-size="3872x2592">
+							<%= image_tag("thumb.scuba.jpg") %>
             </a>
-						<figcaption itemprop="caption description">Dani &amp; Brett Shower</figcaption>
+						</a><figcaption itemprop="caption description">Dani &amp; Brett Scuba</figcaption>
         </figure>
 			</div>
-			<div class="col-sm-6 col-md-4 col-lg-3 col-xs-12">
-        <figure class="tall">
-            <a class="thumbnail-link" href="<%= image_path('shower/Dani_Brett_48.JPG') %>" data-size="1459x2189">
-							<%= image_tag("shower/thumb.Dani_Brett_48.JPG") %>
-            </a>
-						<figcaption itemprop="caption description">Dani &amp; Brett Shower</figcaption>
-        </figure>
-			</div>
-			<div class="col-sm-6 col-md-4 col-lg-3 col-xs-12">
-        <figure class="tall">
-            <a class="thumbnail-link" href="<%= image_path('shower/Dani_Brett_52.JPG') %>" data-size="1459x2189">
-							<%= image_tag("shower/thumb.Dani_Brett_52.JPG") %>
-            </a>
-						<figcaption itemprop="caption description">Dani &amp; Brett Shower</figcaption>
-        </figure>
-			</div>
-			<div class="col-sm-6 col-md-4 col-lg-3 col-xs-12">
+			<div class="photo-thumbnail">
         <figure class="tall">
             <a class="thumbnail-link" href="<%= image_path('shower/Dani_Brett_67.JPG') %>" data-size="1459x2189">
 							<%= image_tag("shower/thumb.Dani_Brett_67.JPG") %>
@@ -146,10 +57,89 @@
 						<figcaption itemprop="caption description">Dani &amp; Brett Shower</figcaption>
         </figure>
 			</div>
-			<div class="col-sm-6 col-md-4 col-lg-3 col-xs-12">
+			<div class="photo-thumbnail">
+        <figure>
+            <a class="thumbnail-link" href="<%= image_path('scuba2.jpg') %>" data-size="3872x2592">
+							<%= image_tag("thumb.scuba2.jpg") %>
+            </a>
+						</a><figcaption itemprop="caption description">Dani &amp; Brett Scuba</figcaption>
+        </figure>
+			</div>
+			<div class="photo-thumbnail">
         <figure class="tall">
-            <a class="thumbnail-link" href="<%= image_path('shower/Dani_Brett_79.JPG') %>" data-size="1459x2189">
-							<%= image_tag("shower/thumb.Dani_Brett_79.JPG") %>
+            <a class="thumbnail-link" href="<%= image_path('shower/Dani_Brett_35.JPG') %>" data-size="1459x2189">
+							<%= image_tag("shower/thumb.Dani_Brett_35.JPG") %>
+            </a>
+						<figcaption itemprop="caption description">Dani &amp; Brett Shower</figcaption>
+        </figure>
+			</div>
+			<div class="photo-thumbnail">
+        <figure>
+            <a class="thumbnail-link" href="<%= image_path('scuba6.jpg') %>" data-size="3872x2592">
+							<%= image_tag("thumb.scuba6.jpg") %>
+            </a>
+						</a><figcaption itemprop="caption description">Dani &amp; Brett Scuba</figcaption>
+        </figure>
+			</div>
+			<div class="photo-thumbnail">
+        <figure class="tall">
+            <a class="thumbnail-link" href="<%= image_path('shower/Dani_Brett_52.JPG') %>" data-size="1459x2189">
+							<%= image_tag("shower/thumb.Dani_Brett_52.JPG") %>
+            </a>
+						<figcaption itemprop="caption description">Dani &amp; Brett Shower</figcaption>
+        </figure>
+			</div>
+			<div class="photo-thumbnail">
+        <figure>
+            <a class="thumbnail-link" href="<%= image_path('scuba4.jpg') %>" data-size="3872x2592">
+							<%= image_tag("thumb.scuba4.jpg") %>
+            </a><figcaption itemprop="caption description">Dani &amp; Brett Scuba</figcaption>
+        </figure>
+			</div>
+			<div class="photo-thumbnail">
+        <figure>
+            <a class="thumbnail-link" href="<%= image_path('dani_brett_hr0.jpg') %>" data-size="2048x1367">
+							<%= image_tag("thumb.dani_brett_hr0.jpg") %>
+            </a>
+						<figcaption itemprop="caption description">Dani &amp; Brett Engagement</figcaption>
+        </figure>
+			</div>
+			<div class="photo-thumbnail">
+        <figure>
+            <a class="thumbnail-link" href="<%= image_path('dani_brett_hr5.jpg') %>" data-size="2048x1367">
+							<%= image_tag("thumb.dani_brett_hr5.jpg") %>
+            </a>
+						<figcaption itemprop="caption description">Dani &amp; Brett Engagement</figcaption>
+        </figure>
+			</div>
+			<div class="photo-thumbnail">
+        <figure class="tall">
+            <a class="thumbnail-link" href="<%= image_path('shower/Dani_Brett_44.JPG') %>" data-size="1459x2189">
+							<%= image_tag("shower/thumb.Dani_Brett_44.JPG") %>
+            </a>
+						<figcaption itemprop="caption description">Dani &amp; Brett Shower</figcaption>
+        </figure>
+			</div>
+			<div class="photo-thumbnail">
+        <figure>
+            <a class="thumbnail-link" href="<%= image_path('shower/Dani_Brett_25.JPG') %>" data-size="2189x1459">
+							<%= image_tag("shower/thumb.Dani_Brett_25.JPG") %>
+            </a>
+						<figcaption itemprop="caption description">Dani &amp; Brett Shower</figcaption>
+        </figure>
+			</div>
+			<div class="photo-thumbnail">
+        <figure>
+            <a class="thumbnail-link" href="<%= image_path('shower/Dani_Brett_48.JPG') %>" data-size="2189x1459">
+							<%= image_tag("shower/thumb.Dani_Brett_48.JPG") %>
+            </a>
+						<figcaption itemprop="caption description">Dani &amp; Brett Shower</figcaption>
+        </figure>
+			</div>
+			<div class="photo-thumbnail">
+        <figure class="tall">
+            <a class="thumbnail-link" href="<%= image_path('shower/Dani_Brett_34.JPG') %>" data-size="1459x2189">
+							<%= image_tag("shower/thumb.Dani_Brett_34.JPG") %>
             </a>
 						<figcaption itemprop="caption description">Dani &amp; Brett Shower</figcaption>
         </figure>
