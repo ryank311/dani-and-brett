@@ -14,6 +14,8 @@
  *= require animate
  *= require owl.carousel
  *= require owl.theme
+ *= require photoswipe
+ *= require default-skin
  *= require_tree .
  *= require_self
  */
