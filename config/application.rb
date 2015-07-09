@@ -25,6 +25,7 @@ module RubyGettingStarted
 
     # Precompile additional assets
     config.assets.precompile += %w( .svg .eot .woff .ttf )
-    
+    config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
+
   end
 end
