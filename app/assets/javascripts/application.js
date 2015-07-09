@@ -223,4 +223,6 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 };
 
 // execute above function
-initPhotoSwipeFromDOM('#photos-gallery');
+$(function() {
+  initPhotoSwipeFromDOM('#photos-gallery')
+  });
